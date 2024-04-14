@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+.nav-left{
+    font-size: 1.7vw;
+    font-weight: 700;
+    width: 15vw;
+    color: #FF735C;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    list-style-type: none;
+}
+.nav-right ul{
+ list-style-type: none;
+}
+.nav-right a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    align-self: center;
+    font-weight: 600;
+    position: relative;
+    
+}
+.nav-right  li{
+    position: relative;
+    margin-top: .7vw;
+    padding: .3vw 1vw;
+    width: 8vw;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+.nav-right li:hover {
+    background-color: #FF735C;
+    border: 1px solid black;
+    border-radius: .7vw;
+    transform: scale(1.03);
+}
+.nav-right li:hover a{
+    transform: scale(1.03);
+}
+.submenu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+li:hover ul.submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.submenu li{
+    padding: .4VW 0VW .2VW 0PX;
+}
+.nav-right-ss{
+    display: flex;
+    gap:1vw;
+}
+.nav-right-ss button{
+    font-size: 1.3vw;
+    border-radius: 1vw;
+    font-weight: 700;
+    padding: .7vw 1vw;
+    align-self: center;
+    background-color:#FF735C;
+    color: black;
+    border: 0px;
+}
+.nav-right-ss button:hover{
+    transform: scale(1.1);
+}
+.page-1{
+    width: 100%;
+    height: 90vh;
+    background-image: url("/Byteverse_Resorces/homepagevectorimg.avif");
+    background-repeat: no-repeat;
+    background-position: 95% 50% ;
+    background-size: 50vw 30vw;
+}
+.page-1 h1{
+    font-size: 3.7vw;
+    line-height: 3.3vw;
+    letter-spacing: -2px;
+    font-weight: 550;
+    padding: 21vh 0px 0vw 2vw;
+
+
+}
+.page-1 h1 span{
+    color: #FF735C;
+}
+.page-1 p{
+    font-size: 1vw;
+    margin: 5vh 0px 0px 2vw;
+}
+.page-1 button{
+    padding: 1vw 3vw;
+    margin:6vh 0px 0px 2vw ;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    border: 2px solid #fe6a53;
+    background-color: #FF735C;
+    color: white;
+    box-shadow: -10px 5px 5px #00000081;
+}
+.page-1 button:hover{
+    transform: scale(1.1);
+}
+.page-1 a{
+    align-self: center;
+    margin: 0px 0px 0px 3vw;
+    font-size: 1.2vw;
+}
+.page-2{
+    width: 100%;
+    height: 100vh;
+}
+.page-2 h2{
+    color: #FF735C;
+    padding: 1vw 2vw;
+    font-size: 2.5vw;
+}
+.page-2 p{
+    padding: 0vw 2vw;
+}
+.page-2 button{
+    padding: 1vw 3vw;
+    margin:0vh 0vh 10vh 2vw ;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    border: 2px solid #fe6a53;
+    background-color: #FF735C;
+    color: white;
+    box-shadow: -10px 5px 5px #00000081;
+}
+.page-2 button:hover{
+    transform: scale(1.1);
+}
+.card-container{
+    display: flex;
+    height: 50vh;
+    gap: 1vw;
+    padding: 3vw 2vw;
+}
+.card{
+    height: 100%;
+    width: 23vw;
+    position: relative;
+    border-radius: .3vw;
+    overflow: hidden;
+}
+.card video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card:hover img{
+    opacity: 0;
+}
+.finance-box {
+    display: flex;
+    align-items: center;
+}
+.finance-box img{
+    height: 40vh;
+    width: 28vw;
+    margin-left: 5vw;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color:  #FF735C;
+}
+footer{
+    height: 80vh;
+    background-color: #FF735C;
+    padding: 4vh 2vw 10vh 2vw;
+    display: flex;
+    gap: 1vw;
+}
+.footer{
+    height: 50vh;
+    width: 32vw;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+.footer h2{
+    color: black;
+}
+.footer a{
+    text-align: center;
+    justify-self: center;
+    padding: 1vw 1vw;
+    background-color: white;
+    border-radius: .6vw;
+    width: 18vw;
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover img{
+    transform: scale(1.1);
+}
+.footer-3 {
+    height: 50vh;
+    width: 32vw;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+
+}
+.footer-3 h2{
+    color: black;
+}
